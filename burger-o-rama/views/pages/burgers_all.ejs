@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Burgers ALL</title>
+  <%- include ../partials/head %>
+</head>
+<body>
+  <header>
+    <%- include ../partials/nav %>
+  </header>
+  <main>
+    <h1>Show All Burgers</h1>
+    <ul id="res">
+    <% for(var i = 0; i < burgerData.length; i++) { %>
+        <li><%= burgerData[i].name %></li>
+
+    <% } %>
+  </ul>
+
+
+
+  </main>
+  <%- include ../partials/footer %>
+</body>
+</html>
